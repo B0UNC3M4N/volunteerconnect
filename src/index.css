@@ -1,0 +1,112 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 141 39% 97%;
+    --foreground: 142 50% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 142 50% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 142 50% 12%;
+
+    --primary: 142 77% 46%;
+    --primary-foreground: 142 50% 98%;
+
+    --secondary: 219 100% 60%;
+    --secondary-foreground: 219 100% 98%;
+
+    --muted: 141 20% 92%;
+    --muted-foreground: 142 10% 50%;
+
+    --accent: 141 20% 90%;
+    --accent-foreground: 142 50% 12%;
+
+    --destructive: 350 74% 53%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 142 12% 88%;
+    --input: 142 12% 88%;
+    --ring: 142 50% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 142 30% 97%;
+    --sidebar-foreground: 142 50% 20%;
+    --sidebar-primary: 142 65% 35%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 142 20% 92%;
+    --sidebar-accent-foreground: 142 50% 12%;
+    --sidebar-border: 142 12% 88%;
+    --sidebar-ring: 142 60% 50%;
+  }
+
+  .dark {
+    --background: 142 35% 10%;
+    --foreground: 142 10% 90%;
+
+    --card: 142 35% 12%;
+    --card-foreground: 142 10% 90%;
+
+    --popover: 142 35% 12%;
+    --popover-foreground: 142 10% 90%;
+
+    --primary: 142 65% 46%;
+    --primary-foreground: 142 10% 98%;
+
+    --secondary: 219 85% 60%;
+    --secondary-foreground: 219 10% 98%;
+
+    --muted: 142 20% 20%;
+    --muted-foreground: 142 10% 60%;
+
+    --accent: 142 20% 20%;
+    --accent-foreground: 142 10% 90%;
+
+    --destructive: 350 74% 43%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 142 20% 25%;
+    --input: 142 20% 25%;
+    --ring: 142 50% 40%;
+
+    --sidebar-background: 142 35% 12%;
+    --sidebar-foreground: 142 10% 90%;
+    --sidebar-primary: 142 55% 46%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 142 20% 20%;
+    --sidebar-accent-foreground: 142 10% 90%;
+    --sidebar-border: 142 20% 25%;
+    --sidebar-ring: 142 50% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  .hero-gradient {
+    @apply bg-gradient-to-br from-volunteer-700 via-volunteer-500 to-nonprofit-600;
+  }
+  
+  .nonprofit-gradient {
+    @apply bg-gradient-to-r from-nonprofit-700 via-nonprofit-500 to-nonprofit-600;
+  }
+  
+  .volunteer-gradient {
+    @apply bg-gradient-to-r from-volunteer-700 via-volunteer-500 to-volunteer-600;
+  }
+  
+  .admin-gradient {
+    @apply bg-gradient-to-r from-admin-700 via-admin-500 to-admin-600;
+  }
+}
